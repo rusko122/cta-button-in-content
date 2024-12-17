@@ -1,0 +1,65 @@
+/* Button container styling */
+.wp-block-cta-button-in-content .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 26px;
+    background-color: #1699DB;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none; /* No underline initially */
+    border-radius: 0.6rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    line-height: normal;
+    border-color: transparent;
+}
+
+/* Hover state: underline text and adjust arrow position */
+.wp-block-cta-button-in-content .button:hover {
+    background-color: #1489c4; /* Darker blue on hover */
+    text-decoration: underline; /* Underline text */
+    color: #fff;
+    border-color: transparent;
+}
+
+/* Arrow icon styling */
+.wp-block-cta-button-in-content .button img {
+    margin-left: 20px;
+    transition: transform 0.3s ease; /* Smooth arrow movement */
+}
+
+/* Move arrow slightly to the right on hover */
+.wp-block-cta-button-in-content .button:hover img {
+    transform: translateX(5px);
+}
+
+/* Phone Number Button Container */
+.wp-block-cta-phone-number .phone-button-content {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1699DB;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wp-block-cta-phone-number .phone-button-content:hover {
+    text-decoration: underline;
+    border-color: transparent;
+}
+
+/* Phone Icon Styling */
+.wp-block-cta-phone-number .phone-button-content img {
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+/* Phone Number Text */
+.wp-block-cta-phone-number .phone-button-content span {
+    color: #1699DB;
+    font-size: 20px;
+    font-weight: normal;
+}
