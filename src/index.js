@@ -29,7 +29,7 @@ registerBlockType("cta-button-in-content/button", {
                         placeholder="Adaugă textul butonului..."
                     />
                     <img
-                        src="/wp-content/themes/clinica-trident/assets/icons/arrow-right-white.svg"
+                        src={wp_theme_directory + "/assets/icons/arrow-right-white.svg"}
                         alt="Arrow Icon"
                     />
                 </a>
@@ -41,10 +41,10 @@ registerBlockType("cta-button-in-content/button", {
 
         return (
             <div className="wp-block-cta-button-in-content">
-                <a href="http://clinica-trident/programare-online/" className="button button--large button--accent button--icon button--icon-right button--fit-content">
+                <a href="http://clinica-trident.ro/programare-online/" className="button button--large button--accent button--icon button--icon-right button--fit-content">
                     <span>{buttonText}</span>
                     <img
-                        src="/wp-content/themes/clinica-trident/assets/icons/arrow-right-white.svg"
+                        src={wp_theme_directory + "/assets/icons/arrow-right-white.svg"}
                         alt="Arrow Icon"
                     />
                 </a>
@@ -77,7 +77,7 @@ registerBlockType("cta-button-in-content/phone-number", {
             <div className="wp-block-cta-phone-number">
                 <a href="#" className="phone-button-content">
                     <img
-                        src="/wp-content/themes/clinica-trident/assets/icons/phone-outline-accent.svg"
+                        src={wp_theme_directory + "/assets/icons/phone-outline-accent.svg"}
                         alt="Phone Icon"
                         style={{
                             width: "20px",
@@ -107,7 +107,7 @@ registerBlockType("cta-button-in-content/phone-number", {
             <div className="wp-block-cta-phone-number">
                 <a href={`tel:${phoneNumber.replace(/\./g, "")}`} className="phone-button-content">
                     <img
-                        src="/wp-content/themes/clinica-trident/assets/icons/phone-outline-accent.svg"
+                        src={wp_theme_directory + "/assets/icons/phone-outline-accent.svg"}
                         alt="Phone Icon"
                     />
                     <span>{phoneNumber}</span>

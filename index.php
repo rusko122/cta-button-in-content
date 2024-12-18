@@ -30,6 +30,7 @@ class SimpleCTAButton {
             filemtime(plugin_dir_path(__FILE__) . 'build/index.js'),
             true
         );
+        wp_localize_script('cta-button-in-content-js', 'wp_theme_directory', get_template_directory_uri());
 
         // Load editor-specific CSS
         wp_enqueue_style(
@@ -75,6 +76,8 @@ class PhoneNumberButton {
             filemtime(plugin_dir_path(__FILE__) . 'build/index.js'),
             true
         );
+
+        wp_localize_script('cta-button-in-content-js', 'wp_theme_directory', get_template_directory_uri());
 
         // Load editor-specific CSS
         wp_enqueue_style(
